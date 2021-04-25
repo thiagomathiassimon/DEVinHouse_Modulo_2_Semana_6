@@ -56,10 +56,7 @@ public class ProcessoController {
 	@ResponseBody
 	public List<ProcessoDTO> listarProcessosPorAno(@RequestParam String ano) {
 		List<ProcessoDTO> processos = service.listarProcessosPorAno(ano);
-//			if (processos.size() == 0) {
-//			throw new CustomErrorApi("Processos não encontrados!", "Não foi possível completar a busca.",
-//					"Verifique o ano ou a ulr.", "Tente novamente.", "Em caso de dúvida, procure a documentação.");
-//			}
+
 		return processos;
 	}
 
